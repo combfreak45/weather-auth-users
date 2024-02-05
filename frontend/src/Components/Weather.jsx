@@ -17,7 +17,7 @@ const Weather = () => {
     const getWeather = async () => {
       try {
         const response1 = await axios.get(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=ff0f515f240ada087f6389742831b7f7`
+          `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=ff0f515f240ada087f6389742831b7f7`
         );
         console.log(response1.data);
 
@@ -45,7 +45,7 @@ const Weather = () => {
       e.preventDefault();
 
       const response1 = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=ff0f515f240ada087f6389742831b7f7`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=ff0f515f240ada087f6389742831b7f7`
       );
       console.log(response1.data);
 
